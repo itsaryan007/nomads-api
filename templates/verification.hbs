@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Your Email - NavMate</title>
+    <style>
+        /* Reset styles for email compatibility */
+        body, table, td, a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+        
+        table, td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+            border-collapse: collapse;
+        }
+        
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+        
+        /* Main styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f7fa;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header {
+            background-color: #0B5FD5;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        
+        .logo {
+            color: #ffffff;
+            font-size: 28px;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .content {
+            padding: 40px 30px;
+        }
+        
+        .title {
+            color: #333333;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .message {
+            color: #666666;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .verification-code {
+            background-color: #f5f9ff;
+            border: 1px solid #e1ecff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .code {
+            color: #0B5FD5;
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: 8px;
+            margin: 10px 0;
+        }
+        
+        .button {
+            display: inline-block;
+            background-color: #0B5FD5;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 14px 30px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 16px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .footer {
+            background-color: #f8f9fa;
+            padding: 25px 30px;
+            text-align: center;
+            color: #888888;
+            font-size: 14px;
+        }
+        
+        .footer-links {
+            margin: 15px 0;
+        }
+        
+        .footer-links a {
+            color: #0B5FD5;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        
+        .social-icons {
+            margin: 20px 0 10px;
+        }
+        
+        .social-icons a {
+            display: inline-block;
+            margin: 0 8px;
+        }
+        
+        .icon {
+            width: 24px;
+            height: 24px;
+        }
+        
+        /* Responsive styles */
+        @media only screen and (max-width: 480px) {
+            .container {
+                border-radius: 0;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            .title {
+                font-size: 22px;
+            }
+            
+            .code {
+                font-size: 28px;
+                letter-spacing: 6px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#f5f7fa">
+        <tr>
+            <td align="center" style="padding: 40px 20px;">
+                <!-- Main Container -->
+                <table class="container" width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <!-- Header -->
+                    <tr>
+                        <td class="header">
+                            <a href="#" class="logo">NavMate</a>
+                        </td>
+                    </tr>
+                    
+                    <!-- Content -->
+                    <tr>
+                        <td class="content">
+                            <h1 class="title">Verify Your Email Address</h1>
+                            
+                            <p class="message">
+                                Thank you for signing up with NavMate! To complete your registration and start navigating with ease, please verify your email address using the code below:
+                            </p>
+                            
+                            <div class="verification-code">
+                                <p style="margin: 0 0 10px; color: #666666; font-size: 14px;">Your verification code:</p>
+                                <div class="code">{{code}}</div>
+                                <p style="margin: 10px 0 0; color: #888888; font-size: 13px;">This code will expire in 30 minutes</p>
+                            </div>
+                            
+                            <p class="message">
+                                Enter this code in the verification screen in your NavMate app, or click the button below to verify automatically:
+                            </p>
+                            
+                            
+                            <p class="message" style="font-size: 14px; color: #888888;">
+                                If you didn't create an account with NavMate, please ignore this email.
+                            </p>
+                        </td>
+                    </tr>
+                    
+                    <!-- Footer -->
+                    <tr>
+                        <td class="footer">
+                            <p style="margin: 0 0 15px;">© 2025 NavMate. All rights reserved.</p>
+                            
+                            
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
